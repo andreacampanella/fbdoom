@@ -20,6 +20,8 @@
 //
 //-----------------------------------------------------------------------------
 
+
+
 static const char
 rcsid[] = "$Id: m_bbox.c,v 1.1 1997/02/03 22:45:10 b1 Exp $";
 
@@ -72,8 +74,9 @@ boolean NetListen (void);
 //
 // NETWORKING
 //
+#define DOOM_BASE_PORT 5000
+int DOOMPORT = (DOOM_BASE_PORT + 0x1d);
 
-int	DOOMPORT =	(IPPORT_USERRESERVED +0x1d );
 
 int			sendsocket;
 int			insocket;
